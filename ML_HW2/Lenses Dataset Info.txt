@@ -1,0 +1,77 @@
+** Fitting Contact Lenses
+
+The dataset:
+(To download fresh copy you can go here: https://archive.ics.uci.edu/ml/machine-learning-databases/lenses/ )
+
+1  1  1  1  1  3
+2  1  1  1  2  2
+3  1  1  2  1  3
+4  1  1  2  2  1
+5  1  2  1  1  3
+6  1  2  1  2  2
+7  1  2  2  1  3
+8  1  2  2  2  1
+9  2  1  1  1  3
+10 2  1  1  2  2
+11 2  1  2  1  3
+12 2  1  2  2  1
+13 2  2  1  1  3
+14 2  2  1  2  2
+15 2  2  2  1  3
+16 2  2  2  2  3
+17 3  1  1  1  3
+18 3  1  1  2  3
+19 3  1  2  1  3
+20 3  1  2  2  1
+21 3  2  1  1  3
+22 3  2  1  2  2
+23 3  2  2  1  3
+24 3  2  2  2  3
+
+  [You may modify this data set (e.g. convert to csv) so that it is in a format that
+   is appropriate for your algorithm]
+-------------------
+
+ - First column: instance number (can remove this column when feeling data to algorithm)
+ - Second column: age of patient
+ - Third column: spectacle prescription
+ - Fourth column: astigmatic
+ - Fifth column: tear production rate
+ - Sixth column: CLASS label (see below as well as note about class)
+
+
+
+    1. age of the patient: (1) young, (2) pre-presbyopic, (3) presbyopic
+    2. spectacle prescription:  (1) myope, (2) hypermetrope
+    3. astigmatic:     (1) no, (2) yes
+    4. tear production rate:  (1) reduced, (2) normal
+
+
+    -- 3 Classes
+     1 : the patient should be fitted with hard contact lenses,
+     2 : the patient should be fitted with soft contact lenses,
+     3 : the patient should not be fitted with contact lenses.
+
+   For the purposes of this homework question, you can turn this dataset into a
+   binary classification problem by combining "fitted with hard contact lenses" and
+   "fitted with soft contact lenses" (can call it "fitted with contact lenses"). 
+   The other class can be "not to be fitted with contact lenses". For simplicity you
+   can even call the classes "contact-lenses" and "no-contact-lenses"
+   (To do: Convert the three-class problem into a binary classification problem as
+   described above; then use the data set for the homework problem. Remembering to 
+   ignore the first column as it is not necessary - just instance number.) 
+
+   There will be 15 instances for "no-contact-lenses" and 8 instances for 
+   "contact-lenses"
+
+   - Relevant Information:
+    The examples are complete and noise free.
+    The examples highly simplified the problem. The attributes do not
+    fully describe all the factors affecting the decision as to which type,
+    if any, to fit.
+
+   - Number of Instances: 24
+
+   - Number of Attributes: 4 (all nominal)
+
+   - Number of Missing Attribute Values:   0
